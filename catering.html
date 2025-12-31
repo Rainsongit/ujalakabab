@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Ujala Kabab</title>
+  <meta name="title" content="Ujala Kabab">
+  <meta name="description" content="This is a Restaurant by rainsongit">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets/images/ujalakabablogo.png" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/banner.jpg">
+  <link rel="preload" as="image" href="./assets/images/banner2.jpg">
+  <link rel="preload" as="image" href="./assets/images/banner3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Ujala Kabab</p>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          3403 John F. Kennedy Blvd, Jersey City, NJ 07307, United States
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 2.00 pm to 12.00 am</span>
+      </div>
+
+      <a href="tel:+12012227466" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+1 201 222 7466</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:booking@ujalakabab.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">booking@ujalakabab.com</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html#home" class="logo">
+        <img src="./assets/images/ujalakabablogo.png" width="160" height="50" alt="Ujala Kabab - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="index.html#home" class="logo">
+          <img src="./assets/images/ujalakabablogo.png" width="160" height="50" alt="Ujala Kabab - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html#home" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Menu</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#contact" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#catering-hero" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+              <span class="span">Catering</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            3403 John F. Kennedy Blvd, <br>
+            Jersey City, NJ 07307, United States
+          </address>
+
+          <p class="body-4 navbar-text">Open: 2.00 pm - 12.00 am</p>
+
+          <a href="mailto:booking@ujalakabab.com" class="body-4 sidebar-link">booking@ujalakabab.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Booking Request</p>
+
+          <a href="tel:+12012227466" class="body-1 contact-number hover-underline">
+            +1 201 222 7466
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="tel:+12012227466" class="btn btn-secondary">
+        <span class="text text-1">Call To Order</span>
+        <span class="text text-2" aria-hidden="true">Call To Order</span>
+      </a>
+      <a href="#" class="cart-icon-btn" id="cart-btn">
+        <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+        <span class="cart-count" id="cart-count">0</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+  <main>
+    <article>
+  
+      <!-- CATERING HERO -->
+      <section class="hero text-center" aria-label="catering" id="catering-hero">
+  
+        <div class="slider-bg">
+          <img src="./assets/images/banner.jpg" width="1880" height="950" alt="Catering" class="img-cover">
+        </div>
+  
+        <p class="label-2 section-subtitle">Catering</p>
+  
+        <h1 class="display-1 hero-title">
+          Catering for<br>
+          every occasion
+        </h1>
+  
+        <p class="body-2 hero-text">
+          Office lunches, family gatherings, parties and events. Enjoy the same flavors you love,
+          served in trays and platters for your whole group.
+        </p>
+  
+        <a href="tel:+12012227466" target="_blank" class="btn btn-primary">
+          <span class="text text-1">Order Catering Online</span>
+          <span class="text text-2" aria-hidden="true">Order Catering Online</span>
+        </a>
+  
+      </section>
+  
+      <!-- CATERING PACKAGES -->
+      <section class="section service bg-black-10 text-center" aria-label="catering-packages">
+        <div class="container">
+  
+          <p class="section-subtitle label-2">Packages</p>
+  
+          <h2 class="headline-1 section-title">Popular Catering Options</h2>
+  
+          <p class="section-text">
+            Choose one of our most requested options, or contact us for a custom menu built around your event.
+          </p>
+  
+          <ul class="grid-list">
+  
+            <li>
+              <div class="service-card">
+                <div class="card-content">
+                  <h3 class="title-4 card-title">Small Group</h3>
+                  <p class="label-2">Up to 10 guests</p>
+                  <p class="label-2 card-text">
+                    Perfect for team lunches or small family gatherings. Includes a mix of mains, sides and bread.
+                  </p>
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div class="service-card">
+                <div class="card-content">
+                  <h3 class="title-4 card-title">Medium Party</h3>
+                  <p class="label-2">10–25 guests</p>
+                  <p class="label-2 card-text">
+                    Great for office events and celebrations. Vegetarian and non-vegetarian options available.
+                  </p>
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div class="service-card">
+                <div class="card-content">
+                  <h3 class="title-4 card-title">Large Event</h3>
+                  <p class="label-2">25+ guests</p>
+                  <p class="label-2 card-text">
+                    Custom trays and platters for big gatherings. Tell us about your event and we’ll build a menu.
+                  </p>
+                </div>
+              </div>
+            </li>
+  
+          </ul>
+  
+          <a href="https://www.ubereats.com/store/ujala-kebob-resturant/kpVmDnuRSnykTUjVI3XsxA?srsltid=AfmBOooBM7qKT78RT7yUmUbArjqof954gYp3VGIZKkavME2-ueWRdy6z" target="_blank" class="btn btn-secondary">
+            <span class="text text-1">View Full Catering Menu</span>
+            <span class="text text-2" aria-hidden="true">View Full Catering Menu</span>
+          </a>
+  
+        </div>
+      </section>
+      <!--
+  - CATERING MENU
+-->
+<!-- 
+  - CATERING MENU
+-->
+
+<section class="section menu" aria-label="catering-menu" id="catering">
+  <div class="container">
+
+    <p class="section-subtitle text-center label-2">Catering For Every Occasion</p>
+    <h2 class="headline-1 section-title text-center">Catering Menu</h2>
+
+    <p class="menu-text text-center" style="margin-bottom: 3rem;">
+      Perfect for parties, office events, family gatherings and celebrations.
+      Half trays typically serve 8–10 guests, full trays serve 16–20 guests.
+    </p>
+
+    <ul class="grid-list">
+
+      <!-- APPETIZER PLATTERS -->
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+            <img src="./assets/pics/Shami Kabab.jpg"
+                 width="100" height="100"
+                 class="img-cover"
+                 style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div class="catering-card-content">
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Lamb Chapli / Shaami Kabab Platter</a>
+              </h3>
+
+              <span class="badge label-1">Starters – Non Veg</span>
+              <span class="span title-2">From $109.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              Spicy minced lamb patties, shallow-fried and served with chutneys.
+              Half tray (~35–40 pieces): $109.99 &nbsp;|&nbsp;
+              Full tray (~70–80 pieces): $189.99
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart catering-add-btn"
+              data-id="catering-shaami-half"
+              data-name="Lamb Chapli / Shaami Kabab Platter (Half Tray)"
+              data-price="109.99">
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+            <img src="./assets/pics/Seekh Kabab.png"
+                 width="100" height="100"
+                 class="img-cover"
+                 style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div class="catering-card-content">
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Seekh Kebab Platter</a>
+              </h3>
+
+              <span class="badge label-1">Starters – Non Veg</span>
+              <span class="span title-2">From $119.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              Skewers of minced meat (chicken/lamb) marinated with spices and grilled.
+              Half tray (~35–40 skewers): $119.99 &nbsp;|&nbsp;
+              Full tray (~70–80 skewers): $199.99
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart catering-add-btn"
+              data-id="catering-seekh-half"
+              data-name="Seekh Kebab Platter (Half Tray)"
+              data-price="119.99">
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+            <img src="./assets/pics/Aloo Paratha.png"
+                 width="100" height="100"
+                 class="img-cover"
+                 style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div class="catering-card-content">
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Veg Appetizer Platter</a>
+              </h3>
+
+              <span class="badge label-1">Starters – Veg</span>
+              <span class="span title-2">From $89.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              Mix of Aloo Paratha pieces, veg snacks and papad-style starters.
+              Half tray (serves 8–10): $89.99 &nbsp;|&nbsp;
+              Full tray (serves 16–20): $149.99
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart catering-add-btn"
+              data-id="catering-veg-app-half"
+              data-name="Veg Appetizer Platter (Half Tray)"
+              data-price="89.99">
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+      <!-- MAIN COURSE – CURRIES -->
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100%;">
+            <img src="./assets/pics/Paneer Curry.png"
+                 width="100" height="100"
+                 class="img-cover"
+                 style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div class="catering-card-content">
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Paneer Butter Masala Tray</a>
+              </h3>
+
+              <span class="badge label-1">Main Course – Veg</span>
+              <span class="span title-2">From $99.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              Rich and creamy paneer curry in tomato-onion gravy.
+              Half tray (serves 8–10): $99.99 &nbsp;|&nbsp;
+              Full tray (serves 16–20): $169.99
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart catering-add-btn"
+              data-id="catering-paneer-butter-half"
+              data-name="Paneer Butter Masala Tray (Half Tray)"
+              data-price="99.99">
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100%;">
+            <img src="./assets/pics/DalMakhni.png"
+                 width="100" height="100"
+                 class="img-cover"
+                 style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div class="catering-card-content">
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Dal Makhani Tray</a>
+              </h3>
+
+              <span class="badge label-1">Main Course – Veg</span>
+              <span class="span title-2">From $94.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              Slow-cooked black lentils and kidney beans with cream and butter.
+              Half tray (serves 8–10): $94.99 &nbsp;|&nbsp;
+              Full tray (serves 16–20): $159.99
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart catering-add-btn"
+              data-id="catering-dal-makhani-half"
+              data-name="Dal Makhani Tray (Half Tray)"
+              data-price="94.99">
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+      <!-- BIRYANI & RICE TRAYS -->
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100%;">
+            <img src="./assets/pics/Chicken Biryani.png"
+                 width="100" height="100"
+                 class="img-cover"
+                 style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div class="catering-card-content">
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Chicken Biryani (Boneless) Tray</a>
+              </h3>
+
+              <span class="badge label-1">Rice &amp; Biryani</span>
+              <span class="span title-2">From $109.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              Fragrant basmati rice layered with boneless marinated chicken.
+              Half tray (serves 8–10): $109.99 &nbsp;|&nbsp;
+              Full tray (serves 16–20): $189.99
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart catering-add-btn"
+              data-id="catering-chicken-biryani-half"
+              data-name="Chicken Biryani (Boneless) Tray (Half Tray)"
+              data-price="109.99">
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100%;">
+            <img src="./assets/pics/Mutton Biryani.png"
+                 width="100" height="100"
+                 class="img-cover"
+                 style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div class="catering-card-content">
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Mutton Biryani Tray</a>
+              </h3>
+
+              <span class="badge label-1">Rice &amp; Biryani</span>
+              <span class="span title-2">From $119.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              Aromatic basmati rice with tender mutton pieces and spices.
+              Half tray (serves 8–10): $119.99 &nbsp;|&nbsp;
+              Full tray (serves 16–20): $199.99
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart catering-add-btn"
+              data-id="catering-mutton-biryani-half"
+              data-name="Mutton Biryani Tray (Half Tray)"
+              data-price="119.99">
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100%;">
+            <img src="./assets/pics/Paneer Biryani.png"
+                 width="100" height="100"
+                 class="img-cover"
+                 style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div class="catering-card-content">
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Paneer Biryani Tray</a>
+              </h3>
+
+              <span class="badge label-1">Rice &amp; Biryani – Veg</span>
+              <span class="span title-2">From $99.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              Layered rice with paneer cubes and spices – a perfect vegetarian main.
+              Half tray (serves 8–10): $99.99 &nbsp;|&nbsp;
+              Full tray (serves 16–20): $169.99
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart catering-add-btn"
+              data-id="catering-paneer-biryani-half"
+              data-name="Paneer Biryani Tray (Half Tray)"
+              data-price="99.99">
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+      <!-- BREAD BASKETS -->
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100%;">
+            <img src="./assets/pics/garlicNaan.png"
+                 width="100" height="100"
+                 class="img-cover"
+                 style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div class="catering-card-content">
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Assorted Naan Basket</a>
+              </h3>
+
+              <span class="badge label-1">Breads</span>
+              <span class="span title-2">From $49.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              Garlic Naan and Plain Naan, cut into shareable pieces.
+              25 pieces: $49.99 &nbsp;|&nbsp; 50 pieces: $84.99
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart catering-add-btn"
+              data-id="catering-naan-basket-25"
+              data-name="Assorted Naan Basket (25 pieces)"
+              data-price="49.99">
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100%;">
+            <img src="./assets/pics/Aloo Paratha.png"
+                 width="100" height="100"
+                 class="img-cover"
+                 style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div class="catering-card-content">
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Stuffed Paratha Basket</a>
+              </h3>
+
+              <span class="badge label-1">Breads</span>
+              <span class="span title-2">From $59.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              Aloo Paratha and Keema Paratha, cut into quarters for easy serving.
+              20 pieces: $59.99 &nbsp;|&nbsp; 40 pieces: $99.99
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart catering-add-btn"
+              data-id="catering-paratha-basket-20"
+              data-name="Stuffed Paratha Basket (20 pieces)"
+              data-price="59.99">
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+      <!-- DESSERT & DRINKS -->
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100%;">
+            <img src="./assets/pics/GulabJamun.png"
+                 width="100" height="100"
+                 class="img-cover"
+                 style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div class="catering-card-content">
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Gulab Jamun Tray</a>
+              </h3>
+
+              <span class="badge label-1">Desserts</span>
+              <span class="span title-2">From $49.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              Soft milk dumplings in warm sugar syrup.
+              35 pieces: $49.99 &nbsp;|&nbsp; 70 pieces: $84.99
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart catering-add-btn"
+              data-id="catering-gulab-jamun-35"
+              data-name="Gulab Jamun Tray (35 pieces)"
+              data-price="49.99">
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100%;">
+            <img src="./assets/pics/sodas.png"
+                 width="100" height="100"
+                 class="img-cover"
+                 style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div class="catering-card-content">
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Drinks Package</a>
+              </h3>
+
+              <span class="badge label-1">Drinks</span>
+              <span class="span title-2">From $29.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              Assorted canned sodas and bottled water.
+              24 drinks: $29.99 &nbsp;|&nbsp; 48 drinks: $54.99 &nbsp;|&nbsp; 72 drinks: $74.99
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart catering-add-btn"
+              data-id="catering-drinks-24"
+              data-name="Drinks Package (24 drinks)"
+              data-price="29.99">
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+    </ul>
+
+    <p class="menu-text text-center">
+      For custom packages, dietary requests, or larger events,
+      please contact us directly for a personalized catering quote.
+    </p>
+
+  </div>
+</section>
+
+
+
+      <!-- HOW CATERING WORKS -->
+      <section class="section about text-center catering-center" aria-label="how-catering-works">
+        <div class="container">
+  
+          <div class="about-content">
+  
+            <p class="label-2 section-subtitle">How it Works</p>
+  
+            <h2 class="headline-1 section-title">Simple Catering Process</h2>
+  
+            <p class="section-text">
+              1. Choose your date, time and group size. <br>
+              2. Pick your dishes or package using our online catering menu. <br>
+              3. Place your order online through our catering partner. <br>
+              4. Pickup or delivery options may be available depending on the day and time.
+            </p>
+  
+            <div class="contact-label">Need something custom?</div>
+  
+            <p class="section-text">
+              For special requests, dietary needs or large events, please reach out to us directly.
+            </p>
+  
+            <p class="section-text">
+              <strong>Phone:</strong> +1 210 222 7466<br>
+              <strong>Email:</strong> catering@ujalakabab.com
+            </p>
+  
+            <a href="tel:2102227466" target="_blank" class="btn btn-primary">
+              <span class="text text-1">Start Catering Order</span>
+              <span class="text text-2" aria-hidden="true">Start Catering Order</span>
+            </a>
+  
+          </div>
+  
+        </div>
+      </section>
+  
+    </article>
+  </main>
+  
+<!-- CART OVERLAY + PANEL -->
+<div class="cart-overlay" id="cart-overlay"></div>
+
+<div class="cart-panel" id="cart-panel">
+  <div class="cart-header">
+    <h2 class="headline-3">Your Order</h2>
+    <button class="cart-close-btn" id="cart-close-btn" aria-label="Close cart">
+      <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+    </button>
+  </div>
+
+  <div class="cart-body">
+    <ul class="cart-items" id="cart-items">
+      <!-- Items will be injected by JS -->
+    </ul>
+
+    <div class="cart-summary">
+      <div class="cart-total-row">
+        <span class="label-2">Subtotal:</span>
+        <span class="label-2" id="cart-subtotal">$0.00</span>
+      </div>
+
+      <p class="body-4">Taxes and fees may apply at pickup or payment.</p>
+
+      <button class="btn btn-primary" id="checkout-btn">
+        <span class="text text-1">Review & Checkout</span>
+        <span class="text text-2" aria-hidden="true">Review & Checkout</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+   <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('./assets/images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="index.html#home" class="logo">
+            <img src="./assets/images/ujalakabablogo.png" width="160" height="50" loading="lazy" alt="Ujala Kabab home">
+          </a>
+
+          <address class="body-4">
+            3403 John F. Kennedy Blvd, Jersey City, NJ 07307, United States
+          </address>
+
+          <a href="mailto:booking@ujalakabab.com" class="body-4 contact-link">booking@ujalakabab.com</a>
+
+          <a href="tel:+12012227466" class="body-4 contact-link">Booking Request : +1 201 222 7466</a>
+
+          <p class="body-4">
+            Open : 02:00 pm - 12:00 am
+          </p>
+
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <a href="index.html#home" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+          <li>
+            <a href="index.html#menu" class="label-2 footer-link hover-underline">Menus</a>
+          </li>
+          <li>
+            <a href="index.html#about" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+          <li>
+            <a href="index.html#contact" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+          <li>
+            <a href="catering.html" class="label-2 footer-link hover-underline">Catering</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2025 Ujala Kabab. All Rights Reserved | Crafted by 
+          <a href="https://github.com/rainsongit"
+            target="_blank" class="link">rainsongit</a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+   <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/cart.js"></script>
+  
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  <!-- FIXED FOOD DELIVERY ICONS -->
+  <div class="delivery-fixed">
+    <a href="https://www.ubereats.com/store/ujala-kebob-resturant/kpVmDnuRSnykTUjVI3XsxA?srsltid=AfmBOooBM7qKT78RT7yUmUbArjqof954gYp3VGIZKkavME2-ueWRdy6z" target="_blank" class="delivery-btn">
+      <img src="./assets/images/ubereats.png" alt="Uber Eats">
+    </a>
+
+    <a href="https://www.doordash.com/store/ujala-kabab-jersey-city-25038665/23054149/?srsltid=AfmBOor7b7-IJTgy0YGXumIXn7yeOAN92lacGoRzszfm2cZmVbXsmJwn" target="_blank" class="delivery-btn">
+      <img src="./assets/images/doordash.png" alt="DoorDash">
+    </a>
+  </div>
+<!-- CART OVERLAY & PANEL -->
+<div id="cart-overlay" class="cart-overlay"></div>
+
+<aside id="cart-panel" class="cart-panel">
+  <header class="cart-header">
+    <h3 class="cart-title">Your Order</h3>
+    <button id="cart-close-btn" class="cart-close-btn">&times;</button>
+  </header>
+
+  <ul id="cart-items" class="cart-items"></ul>
+
+  <footer class="cart-footer">
+    <div class="cart-subtotal-row">
+      <span>Subtotal:</span>
+      <span id="cart-subtotal">$0.00</span>
+    </div>
+    <button id="checkout-btn" class="btn btn-primary cart-checkout-btn">
+      Checkout
+    </button>
+  </footer>
+</aside>
+
+</body>
+
+</html>

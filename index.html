@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Ujala Kabab</title>
+  <meta name="title" content="Ujala Kabab">
+  <meta name="description" content="This is a Restaurant by rainsongit">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets/images/ujalakabablogo.png" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Ujala Kabab</p>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          3403 John F. Kennedy Blvd, Jersey City, NJ 07307, United States
+
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 2.00 pm to 12.00 am</span>
+      </div>
+
+      <a href="tel:+12012227466" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+1 201 222 7466</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:booking@ujalakabab.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">booking@ujalakabab.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/ujalakabablogo.png" width="160" height="50" alt="Grilli - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/ujalakabablogo.png" width="160" height="50" alt="Grilli - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menu</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="tel:+12012227466" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="catering.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Catering</span>
+            </a>
+          </li>
+          
+          
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            Restaurant St, Delicious City, <br>
+            London 9578, UK
+          </address>
+
+          <p class="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
+
+          <a href="mailto:booking@ujalakabab.com" class="body-4 sidebar-link">booking@ujalakabab.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Booking Request</p>
+
+          <a href="tel:+12012227466" class="body-1 contact-number hover-underline">
+            +1 201 222 7466
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="#" class="btn btn-secondary text-2">
+        <span class="text text-1">Find A Table</span>
+
+        <span class="text text-2" aria-hidden="true">Find A Table</span>
+      </a>
+      <a href="#" class="cart-icon-btn" id="cart-btn">
+        <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+        <span class="cart-count" id="cart-count">0</span>
+      </a>
+      
+      
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/banner.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              For the love of <br>
+              delicious food
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="#menu" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/Banner2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Flavors Inspired by <br>
+              the Seasons
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/banner3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Where every flavor <br>
+              tells a story
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#" class="hero-btn has-after">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Book A Table</span>
+        </a>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Flavors For Royalty</p>
+
+          <h2 class="headline-1 section-title">We Offer Top Notch</h2>
+
+          <p class="section-text">
+            Enjoy a wide spread of delicious varieties, crafted fresh every day.
+            From sizzling grills to rich, comforting curries, there’s something for everyone.
+            Taste the tradition, love the flavor.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service1.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Breads</a>
+                  </h3>
+
+                  <a href="#menu" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service2.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Mains</a>
+                  </h3>
+
+                  <a href="#menu" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service3.jpg" width="285" height="336" loading="lazy" alt="Drinks"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Appetizers</a>
+                  </h3>
+
+                  <a href="#menu" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim">
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Our Story</p>
+
+            <h2 class="headline-1 section-title">Two Decades, One Flame: The Journey of Chef Babar</h2>
+
+            <p class="section-text">
+              
+They say a great kabab isn’t just made with spice; it’s made with time. For Chef Babar, that journey began over 20 years ago. After two decades behind the tandoors of some of the most respected kitchens, Babar decided it was time to bring his own vision of "Ujala" (light) to the plate.
+With every skewer he prepares, Babar draws on a lifetime of experience—perfecting the precise moment the meat becomes tender, the exact temperature of the clay oven, and the secret spice blends that have become his signature.
+Today, Chef Babar has a simple, humble mission: to serve the world, one happy stomach at a time. Whether you are a regular or a first-time visitor, you aren’t just a customer in his kitchen—you are a guest at his table.
+            </p>
+
+            <div class="contact-label">Book Through Call</div>
+
+            <a href="tel:+12012227466" class="body-1 contact-number hover-underline">+1 201 222 7466</a>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">Read More</span>
+
+              <span class="text text-2" aria-hidden="true">Read More</span>
+            </a>
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/images/chef.png" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+            <div class="abs-img abs-img-2 has-before">
+              <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
+            </div>
+
+          </figure>
+
+          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SPECIAL DISH
+      -->
+
+      <section class="special-dish text-center" aria-labelledby="dish-label">
+
+        <div class="special-dish-banner">
+          <img src="./assets/pics/Seekh Kabab.png" width="940" height="900" loading="lazy" alt="special dish"
+            class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+
+            <img src="./assets/pics/Seekh Kabab.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
+
+            <p class="section-subtitle label-2">Special Dish</p>
+
+            <h2 class="headline-1 section-title">Seekh Kabab</h2>
+
+            <p class="section-text">
+              "Experience the melt-in-your-mouth magic of Chef Babar’s signature Seekh Kababs. Perfectly charred on the outside and bursting with fresh herbs and hand-ground spices on the inside—it’s the authentic taste of the grill in every bite."
+            </p>
+
+            <div class="wrapper">
+              <!-- <del class="del body-3">$40.00</del> -->
+
+              <span class="span body-1">$14.00</span>
+            </div>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">View All Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View All Menu</span>
+            </a>
+
+          </div>
+        </div>
+
+        <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+
+        <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+
+      </section>
+      <!-- 
+  - #MENU
+-->
+<!-- 
+<section class="section menu" aria-label="menu-label" id="menu">
+  <div class="container">
+
+    <p class="section-subtitle text-center label-2">Ujala Kabab Specialties</p>
+
+    <h2 class="headline-1 section-title text-center">Our Menu</h2>
+
+    <ul class="grid-list">
+
+    
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+            <img src="./assets/pics/Shami Kabab.jpg"
+                width="100" height="100"
+                class="img-cover"
+                style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Lamb Chapli/Shaami Kababs</a>
+              </h3>
+
+              <span class="badge label-1">Appetizer</span>
+
+              <span class="span title-2">$9.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              A spicy, flattened, minced lamb patty.
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart"
+              data-id="lamb-chapli-shaami"
+              data-name="Lamb Chapli/Shaami Kababs"
+              data-price="9.99"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+            <img src="./assets/pics/Seekh Kabab.png"
+                width="100" height="100"
+                class="img-cover"
+                style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Seekh Kabab</a>
+              </h3>
+
+              <span class="badge label-1">Appetizer</span>
+
+              <span class="span title-2">$7.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              Flavorful minced meat, marinated with spices and grilled on skewers.
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart"
+              data-id="seekh-kabab"
+              data-name="Seekh Kabab"
+              data-price="7.99"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+      
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+            <img src="./assets/pics/Keema Paratha.png"
+                width="100" height="100"
+                class="img-cover"
+                style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Keema Paratha</a>
+              </h3>
+
+              <span class="badge label-1">Breads</span>
+
+              <span class="span title-2">$7.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              Unleavened flatbread stuffed with spiced minced meat (chicken).
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart"
+              data-id="keema-paratha"
+              data-name="Keema Paratha"
+              data-price="7.99"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+    
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+            <img src="./assets/pics/Paneer Curry.png"
+                width="100" height="100"
+                class="img-cover"
+                style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Paneer Butter Masala</a>
+              </h3>
+
+              <span class="badge label-1">Veg Main Course</span>
+
+              <span class="span title-2">$17.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              Indian cottage cheese cooked in a rich, creamy tomato-based gravy.
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart"
+              data-id="paneer-butter-masala"
+              data-name="Paneer Butter Masala"
+              data-price="17.99"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100%;">
+            <img src="./assets/pics/DalMakhni.png"
+                width="100" height="100"
+                class="img-cover"
+                style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Dal Makhani</a>
+              </h3>
+
+              <span class="badge label-1">Veg Main Course</span>
+
+              <span class="span title-2">$21.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              Slow-cooked black lentils and kidney beans with butter and cream.
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart"
+              data-id="dal-makhani"
+              data-name="Dal Makhani"
+              data-price="21.99"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+     
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100%;">
+            <img src="./assets/pics/Chicken Biryani.png"
+                width="100" height="100"
+                class="img-cover"
+                style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Chicken Biryani (Boneless)</a>
+              </h3>
+
+              <span class="badge label-1">Biryani</span>
+
+              <span class="span title-2">$16.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              Fragrant basmati rice cooked with marinated boneless chicken and spices.
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart"
+              data-id="chicken-biryani-boneless"
+              data-name="Chicken Biryani (Boneless)"
+              data-price="16.99"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100%;">
+            <img src="./assets/pics/Mutton Biryani.png"
+                width="100" height="100"
+                class="img-cover"
+                style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Mutton Biryani</a>
+              </h3>
+
+              <span class="badge label-1">Biryani</span>
+
+              <span class="span title-2">$17.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              Aromatic rice with tender goat pieces and a blend of spices.
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart"
+              data-id="mutton-biryani"
+              data-name="Mutton Biryani"
+              data-price="17.99"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100%;">
+            <img src="./assets/pics/Paneer Biryani.png"
+                width="100" height="100"
+                class="img-cover"
+                style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Paneer Biryani</a>
+              </h3>
+
+              <span class="badge label-1">Biryani</span>
+
+              <span class="span title-2">$14.99</span>
+            </div>
+
+            <p class="card-text label-1">
+              Layered rice with paneer cubes, herbs and spices.
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart"
+              data-id="paneer-biryani"
+              data-name="Paneer Biryani"
+              data-price="14.99"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+   
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100%;">
+            <img src="./assets/pics/garlicNaan.png"
+                width="100" height="100"
+                class="img-cover"
+                style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Garlic Naan</a>
+              </h3>
+
+              <span class="badge label-1">Breads</span>
+
+              <span class="span title-2">$6.49</span>
+            </div>
+
+            <p class="card-text label-1">
+              Soft, fluffy naan infused with garlic and brushed with butter.
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart"
+              data-id="garlic-naan"
+              data-name="Garlic Naan"
+              data-price="6.49"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100%;">
+            <img src="./assets/pics/Aloo Paratha.png"
+                width="100" height="100"
+                class="img-cover"
+                style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Aloo Paratha</a>
+              </h3>
+
+              <span class="badge label-1">Breads</span>
+
+              <span class="span title-2">$6.49</span>
+            </div>
+
+            <p class="card-text label-1">
+              Whole-wheat flatbread stuffed with spiced mashed potatoes.
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart"
+              data-id="aloo-paratha"
+              data-name="Aloo Paratha"
+              data-price="6.49"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+     
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100%;">
+            <img src="./assets/pics/GulabJamun.png"
+                width="100" height="100"
+                class="img-cover"
+                style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Gulab Jamun</a>
+              </h3>
+
+              <span class="badge label-1">Desserts</span>
+
+              <span class="span title-2">$5.00</span>
+            </div>
+
+            <p class="card-text label-1">
+              Golden-brown milk balls soaked in cardamom sugar syrup.
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart"
+              data-id="gulab-jamun"
+              data-name="Gulab Jamun"
+              data-price="5.00"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+
+     
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100%;">
+            <img src="./assets/pics/sodas.png"
+                width="100" height="100"
+                class="img-cover"
+                style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;">
+          </figure>
+
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Soft Drinks / Water</a>
+              </h3>
+
+              <span class="badge label-1">Drinks</span>
+
+              <span class="span title-2">$2.50</span>
+            </div>
+
+            <p class="card-text label-1">
+              Assorted canned sodas and bottled water.
+            </p>
+
+            <button
+              class="btn btn-secondary add-to-cart"
+              data-id="soft-drinks-water"
+              data-name="Soft Drinks / Water"
+              data-price="2.50"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </li>
+      
+
+    </ul>
+
+    <p class="menu-text text-center">
+      For the full menu and latest prices, order online via
+      <a href="https://www.doordash.com/store/ujala-kabab-jersey-city-25038665/23054149/"
+        class="span" target="_blank">DoorDash</a>.
+      <a href="https://www.ubereats.com/store/ujala-kebob-resturant/kpVmDnuRSnykTUjVI3XsxA?ps=1"
+        class="span" target="_blank">Uber Eats</a>.
+    </p>
+
+    <a href="https://www.doordash.com/store/ujala-kabab-jersey-city-25038665/23054149/"
+      target="_blank" class="btn btn-primary">
+      <span class="text text-1">Order Ujala Kabab on DoorDash</span>
+      <span class="text text-2" aria-hidden="true">Order Ujala Kabab on DoorDash</span>
+    </a>
+    <a href="https://www.ubereats.com/store/ujala-kebob-resturant/kpVmDnuRSnykTUjVI3XsxA?ps=1"
+      target="_blank" class="btn btn-primary">
+      <span class="text text-1">Order Ujala Kabab on Uber Eats</span>
+      <span class="text text-2" aria-hidden="true">Order Ujala Kabab on Uber Eats</span>
+    </a>
+
+    <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+      class="shape shape-2 move-anim">
+    <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape"
+      class="shape shape-3 move-anim">
+
+  </div>
+</section> -->
+
+<section class="section menu" id="menu">
+  <div class="container">
+
+    <p class="section-subtitle text-center label-2">Ujala Kabab Specialties</p>
+    <h2 class="headline-1 section-title text-center">Our Menu</h2>
+
+    <!-- MENU TABS -->
+    <div class="menu-tabs">
+      <button class="menu-tab active" data-category="appetizers">Appetizers</button>
+      <button class="menu-tab" data-category="curries">Curries</button>
+      <button class="menu-tab" data-category="biryanis">Biryanis</button>
+      <button class="menu-tab" data-category="breads">Breads & Sides</button>
+    </div>
+
+    <!-- MENU ITEMS -->
+    <ul class="grid-list" id="menu-container"></ul>
+
+  </div>
+</section>
+
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('./assets/images/testimonial-bg.jpg')" aria-label="testimonials">
+        <div class="container">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            As an Indian this is really good place to have authentic food. No hype and nothing but good food. You will get warm welcome from the owners. Try the homemade kulfi too.
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/testimonial guy.jpg" width="100" height="100" loading="lazy" alt="Shah Nawaz Alam"
+              class="img">
+
+            <p class="label-2 profile-name">Shah Nawaz Alam</p>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features text-center" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Why Choose Us</p>
+
+          <h2 class="headline-1 section-title">Our Strength</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Hygienic Food</h3>
+
+                <p class="label-1 card-text">Your health is our priority, with strict hygiene from fresh ingredients to your plate, ensuring every bite is safe, delicious, and worry-free.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Fresh Environment</h3>
+
+                <p class="label-1 card-text">Step into a breath of fresh air where vibrant ingredients meet a naturally uplifting ambiance, creating your perfect escape for delicious, wholesome dining that nourishes both body and soul.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Skilled Chefs</h3>
+
+                <p class="label-1 card-text">Our skilled chefs transform fresh ingredients into culinary art, blending traditional techniques with modern innovation to craft unforgettable dishes, ensuring every plate is a testament to passion, precision, and flavor.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Event & Party Catering</h3>
+
+                <p class="label-1 card-text">Elevate your next event with our restaurant's catering, bringing fresh, unforgettable flavors and seamless service from our kitchen to your celebration, making every gathering a delicious memory.</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
+            class="shape shape-1">
+
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #EVENT
+      -->
+
+    
+
+    </article>
+  </main>
+
+<!-- CART OVERLAY + PANEL -->
+<div class="cart-overlay" id="cart-overlay"></div>
+
+<div class="cart-panel" id="cart-panel">
+  <div class="cart-header">
+    <h2 class="headline-3">Your Order</h2>
+    <button class="cart-close-btn" id="cart-close-btn" aria-label="Close cart">
+      <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+    </button>
+  </div>
+
+  <div class="cart-body">
+    <ul class="cart-items" id="cart-items">
+      <!-- Items will be injected by JS -->
+    </ul>
+
+    <div class="cart-summary">
+      <div class="cart-total-row">
+        <span class="label-2">Subtotal:</span>
+        <span class="label-2" id="cart-subtotal">$0.00</span>
+      </div>
+
+      <p class="body-4">Taxes and fees may apply at pickup or payment.</p>
+
+      <button class="btn btn-primary" id="checkout-btn">
+        <span class="text text-1">Review & Checkout</span>
+        <span class="text text-2" aria-hidden="true">Review & Checkout</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('./assets/images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/ujalakabablogo.png" width="160" height="50" loading="lazy" alt="grilli home">
+          </a>
+
+          <address class="body-4">
+            3403 John F. Kennedy Blvd, Jersey City, NJ 07307, United States
+          </address>
+
+          <a href="mailto:booking@ujalakabab.com" class="body-4 contact-link">booking@ujalakabab.com</a>
+
+          <a href="tel:+12012227466" class="body-4 contact-link">Booking Request : +1 201 222 7466</a>
+
+          <p class="body-4">
+            Open : 02:00 pm - 12:00 am
+          </p>
+
+         
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="#menu" class="label-2 footer-link hover-underline">Menu</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+          <!-- <li>
+            <a href="#" class="label-2 footer-link hover-underline">Our Chefs</a>
+          </li> -->
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+          <li>
+            <a href="catering.html" class="label-2 footer-link hover-underline">Catering</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+          <li>
+            <a href="https://www.google.com/maps/place/Ujala/@40.748628,-74.058553,16z/data=!3m1!5s0x89c25714fb03dfc7:0xa219c8dfce14581d!4m14!1m7!3m6!1s0x89c25714fbb2ffff:0x7039dfd14691b176!2sUjala!8m2!3d40.748624!4d-74.0559781!16s%2Fg%2F11c6_f82h9!3m5!1s0x89c25714fbb2ffff:0x7039dfd14691b176!8m2!3d40.748624!4d-74.0559781!16s%2Fg%2F11c6_f82h9?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2025 Ujala Kabab. All Rights Reserved | Crafted by <a href="https://github.com/rainsongit"
+            target="_blank" class="link">rainsongit</a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/cart.js"></script>
+  
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  <!-- FIXED FOOD DELIVERY ICONS -->
+  <div class="delivery-fixed">
+    <a href="https://www.ubereats.com/store/ujala-kebob-resturant/kpVmDnuRSnykTUjVI3XsxA?srsltid=AfmBOooBM7qKT78RT7yUmUbArjqof954gYp3VGIZKkavME2-ueWRdy6z" target="_blank" class="delivery-btn">
+      <img src="./assets/images/ubereats.png" alt="Uber Eats">
+    </a>
+
+    <a href="https://www.doordash.com/store/ujala-kabab-jersey-city-25038665/23054149/?srsltid=AfmBOor7b7-IJTgy0YGXumIXn7yeOAN92lacGoRzszfm2cZmVbXsmJwn" target="_blank" class="delivery-btn">
+      <img src="./assets/images/doordash.png" alt="DoorDash">
+    </a>
+  </div>
+
+</body>
+<script>
+  const menuData = {
+
+    appetizers: [
+      // VEG APPETIZERS
+      { name: "Veg Samosa", price: "$6.99", img: "./assets/pic/samosa.png" },
+      { name: "Paneer Shashlik", price: "$14.99", img: "./assets/pic/paneer shashlik.png" },
+      { name: "Aloo Tikki (2 pcs)", price: "$2.99", img: "./assets/pic/aloo tikki.png" },
+      { name: "Roasted Papad", price: "$2.00", img: "./assets/pic/Roasted Papad.png" },
+      { name: "Masala Papad", price: "$3.00", img: "./assets/pic/Masala Papad.png" },
+      { name: "Mix Pakoda", price: "$11.99", img: "./assets/pic/Mix Pakoda.png" },
+      { name: "Chilli Pakoda", price: "$11.99", img: "./assets/pic/Chilli Pakoda.png" },
+      { name: "Chilli Pakoda (Paneer)", price: "$12.99", img: "./assets/pic/Chilli Paneer Pakoda.png" },
+      { name: "Fry Papad", price: "$2.00", img: "./assets/pic/Fried Papad.png" },
+      { name: "Pani Puri", price: "$6.99", img: "./assets/Picss/Panipuri.png" },
+      { name: "Pani Puri w/ Ragda", price: "$6.99", img: "./assets/Picss/Panipuri.png" },
+      { name: "Dahi Puri", price: "$6.99", img: "./assets/pix/Dahi puri.png" },
+      { name: "Sev Puri", price: "$6.99", img: "./assets/pix/Sev puri .png" },
+
+      // NON-VEG APPETIZERS
+      { name: "Chicken Tandoori (With Bone)", price: "$11.99", img: "./assets/pic/Chicken Tandoori.png" },
+      { name: "Chicken Tikka", price: "$14.99", img: "./assets/pic/Chicken Tikka.png" },
+      { name: "Malai Tikka", price: "$15.99", img: "./assets/pic/Malai Tikka.png" },
+      { name: "Tilapia Fish Tikka", price: "$17.99", img: "./assets/pic/fish tikka.png" },
+      { name: "Pomfret Fish (Whole)", price: "$23.99", img: "/assets/pic/Tilapia Fish Tikka.png" },
+
+      // KABABS
+      { name: "Shami Kabab", price: "$6.99", img: "./assets/pics/Shami Kabab.jpg" },
+      { name: "Shapli Kabab", price: "$6.99", img: "./assets/pic/shapli kabab.png" },
+      { name: "Seekh Kabab", price: "$6.99", img: "./assets/pics/Seekh Kabab.png" },
+      { name: "Kheema Paratha", price: "$6.99", img: "./assets/pics/Keema Paratha.png" },
+
+      // EGGS
+      { name: "Egg Bhurji", price: "$13.99", img: "./assets/pix/Egg Burji.png" },
+      { name: "Egg Curry", price: "$11.99", img: "./assets/pix/Egg curry.png" },
+      { name: "Egg Butter Masala", price: "$12.99", img: "./assets/pix/Egg Butter Masala.png" },
+      { name: "Boiled Egg Fry (2)", price: "$5.99", img: "./assets/pix/Boiled Egg fry.png" },
+      { name: "Egg Omelette (2)", price: "$8.99", img: "./assets/pix/Egg Omlette.png" },
+    ],
+
+    curries: [
+      // VEG MAIN COURSE
+      { name: "Achari Aloo", price: "$11.99", img: "./assets/pic/Achari Aloo.png" },
+      { name: "Paneer Tikka Masala", price: "$14.99", img: "./assets/Picture/pabeer tikka masala.png" },
+      { name: "Paneer Bhurji", price: "$12.99", img: "./assets/pic/paneer burji.png" },
+      { name: "Palak Paneer", price: "$12.99", img: "./assets/pic/Palak paneer.png" },
+      { name: "Mix Veg", price: "$12.99", img: "./assets/Picture/mix veg.png" },
+      { name: "Aloo Palak", price: "$12.99", img: "./assets/pic/aloo palak.png" },
+      { name: "Aloo Mutter", price: "$12.99", img: "/assets/pic/Aloo Mutter.png" },
+      { name: "Bhindi Bhuna", price: "$12.99", img: "./assets/Picture/Bhindi Bhuna.png" },
+      { name: "Chana Masala", price: "$11.99", img: "./assets/pic/chana masala.png" },
+      { name: "Paneer Makhani", price: "$14.99", img: "./assets/pic/Paneer Makhani.png" },
+      { name: "Saag", price: "$12.99", img: "./assets/pic/Saag Chana.png" },
+      { name: "Cheese Butter Masala", price: "$15.99", img: "./assets/Picture/Cheese butter maala.png" },
+      { name: "Dal Tadka", price: "$10.99", img: "./assets/Picture/dal tadka .png" },
+      { name: "Dal Makhni", price: "$12.99", img: "./assets/pics/DalMakhni.png" },
+
+      // NON-VEG CURRIES
+      { name: "Dal Goot", price: "$19.00", img: "./assets/Picture/Dahi puri.png" },
+      { name: "Achi Chicken", price: "$18.00", img: "./assets/Picture/achari chicken.png" },
+      { name: "Desi Korma Chicken", price: "$18.00", img: "./assets/pix/desi chicken korma.png" },
+      { name: "Achari Chicken", price: "$16.00", img: "./assets/Picture/achari chicken.png" },
+      { name: "Mutton Curry", price: "$16.00", img: "./assets/Picture/Mutton curry.png" },
+      { name: "Chicken Tikka Masala (Bone/Boneless)", price: "$16.00", img: "./assets/Picture/Chicken tikka masala .png" },
+      { name: "Butter Chicken", price: "$16.00", img: "./assets/Picture/Butter chicken.png" },
+      { name: "Palak Chicken", price: "$16.00", img: "./assets/Picture/palak goat.png" },
+      { name: "Special Chicken Nihari", price: "$18.00", img: "./assets/Picture/spl Chicken Nihari.png" },
+      { name: "Chicken Keema", price: "$16.00", img: "./assets/Picture/Chicken keema.png" },
+      { name: "Kadai Chicken", price: "$16.00", img: "./assets/Picture/kadai chicken .png" },
+      { name: "Ujala Special Chicken (Boneless)", price: "$18.00", img: "./assets/Picture/ujala spl chicken .png" },
+      { name: "Chicken Keema Mutter", price: "$16.00", img: "./assets/Picture/Chicken keema mutter.png" },
+      { name: "Palak Goat", price: "$16.00", img: "./assets/Picture/palak goat.png" },
+      { name: "Aloo Palak Goat", price: "$16.00", img: "./assets/Picture/aloo palak goat.png" },
+      { name: "Special Goat Paya", price: "$18.00", img: "./assets/pic/goat pa.png" },
+      { name: "Goat Nihari Special", price: "$19.00", img: "./assets/pic/goat nihari spl.png" },
+    ],
+
+    biryanis: [
+      { name: "Chicken Biryani (Bone)", price: "$15.00", img: "./assets/pics/Chicken Biryani.png" },
+      { name: "Chicken Biryani (Boneless)", price: "$16.00", img: "./assets/pics/Chicken Biryani.png" },
+      { name: "Mutton Biryani", price: "$17.00", img: "./assets/pics/Mutton Biryani.png" },
+      { name: "Egg Biryani", price: "$13.99", img: "./assets/Picss/Egg Biryani.png" },
+      { name: "Veg Biryani", price: "$13.99", img: "./assets/Picss/Veg Biryani.png" },
+      { name: "Paneer Biryani", price: "$14.99", img: "./assets/pics/Paneer Biryani.png" },
+      { name: "Plain Rice", price: "$4.99", img: "./assets/Picss/Plain Rice.png" },
+      { name: "Jeera Rice", price: "$5.99", img: "./assets/Picss/Jeera rice.png" },
+      { name: "Rainbow Rice", price: "$8.99", img: "./assets/Picss/Rainbow Rice.png" },
+    ],
+
+    breads: [
+      { name: "Chapati (Wheat)", price: "$2.99", img: "./assets/Picss/Chapathi.png" },
+      { name: "Tandoori Roti (Wheat)", price: "$2.99", img: "./assets/Picss/Tandoori Roti.png" },
+      { name: "Laccha Paratha (Wheat)", price: "$4.99", img: "./assets/Picss/Laccha paratha .png" },
+      { name: "Garlic Naan", price: "$3.50", img: "./assets/pics/garlicNaan.png" },
+      { name: "Afghani Naan", price: "$4.99", img: "./assets/Picss/Afghani naan.png" },
+      { name: "Onion Kulcha", price: "$4.99", img: "./assets/Picss/Onion Kulcha.png" },
+      { name: "Aloo Paratha", price: "$4.99", img: "./assets/pics/Aloo Paratha.png" },
+
+      // Desserts & Drinks
+      { name: "Kheer", price: "$4.99", img: "./assets/Picss/kheer.png" },
+      { name: "Gulab Jamun", price: "$4.99", img: "./assets/pics/GulabJamun.png" },
+      { name: "Rasmalai", price: "$5.99", img: "./assets/Picss/Rasmalai.png" },
+      { name: "Sweet Lassi", price: "$3.99", img: "./assets/Picss/Lassi.png" },
+      { name: "Salt Lassi", price: "$3.99", img: "./assets/Picss/Lassi.png" },
+      { name: "Mango Lassi", price: "$4.99", img: "./assets/Picss/Mango lassi.png" },
+      { name: "Masala Tea", price: "$2.99", img: "./assets/pic/masala chai.png" },
+      { name: "Water", price: "$1.00", img: "./assets/Picss/Water.png" },
+      { name: "Soda", price: "$2.25", img: "./assets/pics/sodas.png" },
+    ]
+  };
+  function loadMenu(category) {
+  const container = document.getElementById("menu-container");
+  container.innerHTML = "";
+
+  menuData[category].forEach((item, index) => {
+    // Parse numeric price for cart
+    const priceValue =
+      typeof item.price === "string"
+        ? parseFloat(item.price.replace("$", ""))
+        : item.price;
+
+    // Stable id based on category + index + name
+    const itemId =
+      category +
+      "-" +
+      index +
+      "-" +
+      item.name.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+
+    container.innerHTML += `
+      <li>
+        <div class="menu-card hover:card">
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+            <img
+              src="${item.img}"
+              width="100"
+              height="100"
+              alt="${item.name}"
+              class="img-cover"
+              style="object-fit: cover; width: 100px; height: 100px; border-radius: 8px;"
+            >
+          </figure>
+
+          <div class="menu-card-content">
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">${item.name}</a>
+              </h3>
+              <span class="span title-2">${item.price}</span>
+            </div>
+
+            <button
+              class="btn btn-secondary add-to-cart"
+              data-id="${itemId}"
+              data-name="${item.name}"
+              data-price="${priceValue}"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </li>
+    `;
+  });
+}
+
+
+  // TAB SWITCHING
+  document.querySelectorAll(".menu-tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      document.querySelector(".menu-tab.active").classList.remove("active");
+      tab.classList.add("active");
+
+      loadMenu(tab.dataset.category);
+    });
+  });
+
+  // Load FIRST TAB by default
+  loadMenu("appetizers");
+</script>
+
+  
+</html>
