@@ -338,9 +338,6 @@ const nodemailer = require("nodemailer");
 
 const app = express();
 const PORT = process.env.PORT || 4242;
-app.listen(PORT, "0.0.0.0", () => {
-  console.log(`Server listening on port ${PORT}`);
-});
 /* ---------------------------------------------------
    PROCESS LOGGING (to see crashes / port issues)
 --------------------------------------------------- */
@@ -583,6 +580,6 @@ app.get("/", (req, res) => {
 /* ---------------------------------------------------
    START SERVER
 --------------------------------------------------- */
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server listening on port ${PORT}`);
 });
