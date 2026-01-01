@@ -34,3 +34,15 @@
   </script>
 </body>
 </html>
+<script>
+  // must match cart.js
+  const cartKey = "ujala_kabab_cart_v1";
+
+  try {
+    localStorage.removeItem(cartKey);                 // best: removes it completely
+    // OR: localStorage.setItem(cartKey, "[]");       // also ok
+  } catch (e) {}
+
+  // Optional: if you want the cart UI to update immediately on this page too
+  // (not required since this page doesn't show cart)
+</script>
