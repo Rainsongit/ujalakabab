@@ -18,5 +18,19 @@
       </a>
     </div>
   </main>
+
+  <script>
+    // Must match cart.js
+    const cartKey = "ujala_kabab_cart_v1";
+
+    try {
+      localStorage.setItem(cartKey, JSON.stringify([])); // or localStorage.removeItem(cartKey)
+    } catch (e) {}
+
+    // Optional: prevent back button showing old cart state in some browsers
+    if ("caches" in window) {
+      caches.keys().then(keys => keys.forEach(k => caches.delete(k))).catch(()=>{});
+    }
+  </script>
 </body>
 </html>
