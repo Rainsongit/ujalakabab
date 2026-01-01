@@ -443,7 +443,7 @@
 // assets/js/cart.js
 (function () {
   const cartKey = "ujala_kabab_cart_v1";
-
+  localStorage.removeItem(cartKey);
   let cart = [];
 
   const cartBtn = document.getElementById("cart-btn");
