@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -45,4 +45,131 @@
 
   // Optional: if you want the cart UI to update immediately on this page too
   // (not required since this page doesn't show cart)
-</script>
+</script> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Payment Successful - Ujala Kabab</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body class="text-center">
+  <main class="section">
+    <div class="container">
+      <h1 class="headline-1">Thank you!</h1>
+      <p class="section-text">
+        Your payment was successful. We’ve received your order.
+      </p>
+
+      <div id="receipt" class="section-text" style="text-align:left; max-width:720px; margin: 24px auto;">
+        <p>Loading your receipt…</p>
+      </div>
+
+      <a href="index.html" class="btn btn-primary">
+        <span class="text text-1">Back to Home</span>
+        <span class="text text-2" aria-hidden="true">Back to Home</span>
+      </a>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      // ✅ Use the same key as cart.js
+      const CART_KEY = "ujala_kabab_cart_v1";
+
+      function money(n) {
+        const num = Number(n || 0);
+        return "$" + num.toFixed(2);
+      }
+
+      function escapeHtml(str) {
+        return String(str ?? "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#039;");
+      }
+
+      async function loadReceipt() {
+        const receiptEl = document.getElementById("receipt");
+        const params = new URLSearchParams(window.location.search);
+        const sessionId = params.get("session_id");
+
+        // Clear cart on success page too (safe redundancy)
+        try { localStorage.setItem(CART_KEY, JSON.stringify([])); } catch(e) {}
+
+        if (!sessionId) {
+          receiptEl.innerHTML = "<p>Missing order session. If you need help, please call the restaurant.</p>";
+          return;
+        }
+
+        try {
+          const res = await fetch("/order?session_id=" + encodeURIComponent(sessionId));
+          const data = await res.json();
+
+          if (!res.ok || !data.ok || !data.order) {
+            const msg = data && data.error ? data.error : "Could not load receipt.";
+            receiptEl.innerHTML = "<p>" + escapeHtml(msg) + "</p>";
+            return;
+          }
+
+          const order = data.order;
+
+          const itemsHtml = (order.items || []).map(item => {
+            const lineTotal = Number(item.amount || 0); // your server already sets amount = line total
+            return `
+              <li style="display:flex; justify-content:space-between; gap:12px; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.12);">
+                <div>
+                  <div style="font-weight:600;">${escapeHtml(item.name)}</div>
+                  <div style="opacity:0.85; font-size:0.95em;">Qty: ${escapeHtml(item.quantity)}</div>
+                </div>
+                <div style="font-weight:600;">${money(lineTotal)}</div>
+              </li>
+            `;
+          }).join("");
+
+          receiptEl.innerHTML = `
+            <div style="padding:16px; border:1px solid rgba(255,255,255,0.15); border-radius:12px;">
+              <h2 style="margin:0 0 12px 0;">Order Receipt</h2>
+
+              <div style="margin-bottom:12px;">
+                <div><strong>Order ID:</strong> ${escapeHtml(order.orderId)}</div>
+                <div><strong>Payment Status:</strong> ${escapeHtml(order.paymentStatus)}</div>
+              </div>
+
+              <div style="margin-bottom:12px;">
+                <div><strong>Name:</strong> ${escapeHtml(order.customerName || "Customer")}</div>
+                <div><strong>Email:</strong> ${escapeHtml(order.customerEmail || "N/A")}</div>
+                <div><strong>Phone:</strong> ${escapeHtml(order.customerPhone || "N/A")}</div>
+                <div><strong>Address:</strong> ${escapeHtml(order.address || "N/A")}</div>
+              </div>
+
+              <h3 style="margin:16px 0 8px 0;">Items</h3>
+              <ul style="list-style:none; padding:0; margin:0;">
+                ${itemsHtml || "<li>No items found.</li>"}
+              </ul>
+
+              <div style="display:flex; justify-content:space-between; padding-top:12px; margin-top:12px; border-top:1px solid rgba(255,255,255,0.15); font-size:1.05em;">
+                <div><strong>Total</strong></div>
+                <div><strong>${money(order.total)}</strong></div>
+              </div>
+
+              <p style="margin:12px 0 0 0; opacity:0.9;">
+                We’ve sent this order to the restaurant. If you have any questions, call us with your Order ID.
+              </p>
+            </div>
+          `;
+        } catch (err) {
+          console.error(err);
+          receiptEl.innerHTML = "<p>Could not load receipt. Please refresh or call the restaurant.</p>";
+        }
+      }
+
+      loadReceipt();
+    })();
+  </script>
+</body>
+</html>
