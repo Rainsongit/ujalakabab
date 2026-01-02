@@ -1,51 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Payment Successful - Ujala Kabab</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body class="text-center">
-  <main class="section">
-    <div class="container">
-      <h1 class="headline-1">Thank you!</h1>
-      <p class="section-text">
-        Your payment was successful. We’ve received your order.
-      </p>
-      <a href="index.html" class="btn btn-primary">
-        <span class="text text-1">Back to Home</span>
-        <span class="text text-2" aria-hidden="true">Back to Home</span>
-      </a>
-    </div>
-  </main>
-
-  <script>
-    // Must match cart.js
-    const cartKey = "ujala_kabab_cart_v1";
-
-    try {
-      localStorage.setItem(cartKey, JSON.stringify([])); // or localStorage.removeItem(cartKey)
-    } catch (e) {}
-
-    // Optional: prevent back button showing old cart state in some browsers
-    if ("caches" in window) {
-      caches.keys().then(keys => keys.forEach(k => caches.delete(k))).catch(()=>{});
-    }
-  </script>
-</body>
-</html>
-<script>
-  // must match cart.js
-  const cartKey = "ujala_kabab_cart_v1";
-
-  try {
-    localStorage.removeItem(cartKey);                 // best: removes it completely
-    // OR: localStorage.setItem(cartKey, "[]");       // also ok
-  } catch (e) {}
-
-  // Optional: if you want the cart UI to update immediately on this page too
-  // (not required since this page doesn't show cart)
-</script> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,31 +5,243 @@
   <title>Payment Successful - Ujala Kabab</title>
   <link rel="stylesheet" href="./assets/css/style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+
+    .success-wrapper {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 12px;
+    }
+
+    .success-card {
+      max-width: 720px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 24px 20px 32px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+    }
+
+    .success-header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .success-title {
+      margin: 8px 0 4px 0;
+    }
+
+    .success-subtitle {
+      margin: 0;
+      opacity: 0.9;
+    }
+
+    /* Animated checkmark */
+    .checkmark-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 8px;
+    }
+
+    .checkmark {
+      width: 72px;
+      height: 72px;
+    }
+
+    .checkmark circle {
+      stroke-dasharray: 220;
+      stroke-dashoffset: 220;
+      animation: drawCircle 0.8s ease-out forwards;
+    }
+
+    .checkmark path {
+      stroke-dasharray: 60;
+      stroke-dashoffset: 60;
+      animation: drawCheck 0.4s ease-out forwards;
+      animation-delay: 0.6s;
+    }
+
+    @keyframes drawCircle {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes drawCheck {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    #receipt {
+      margin-top: 16px;
+    }
+
+    .pickup-info {
+      margin-top: 16px;
+      font-size: 0.98rem;
+      line-height: 1.4;
+      text-align: left;
+      opacity: 0.95;
+    }
+
+    .pickup-info strong {
+      font-weight: 600;
+    }
+
+    .map-wrapper {
+      margin-top: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .map-iframe {
+      width: 100%;
+      height: 220px;
+      border: 0;
+    }
+
+    .directions-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 0.95rem;
+      text-decoration: underline;
+    }
+
+    .success-actions {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .success-actions .btn {
+      margin-top: 8px;
+    }
+
+    @media (max-width: 480px) {
+      .success-card {
+        padding: 20px 14px 26px;
+      }
+
+      .map-iframe {
+        height: 200px;
+      }
+    }
+  </style>
 </head>
 
-<body class="text-center">
-  <main class="section">
-    <div class="container">
-      <h1 class="headline-1">Thank you!</h1>
-      <p class="section-text">
-        Your payment was successful. We’ve received your order.
-      </p>
+<body>
+  <div class="success-wrapper">
+    <main class="success-card">
+      <div class="success-header">
+        <div class="checkmark-wrapper">
+          <svg class="checkmark" viewBox="0 0 52 52">
+            <circle
+              cx="26"
+              cy="26"
+              r="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+            />
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              d="M14 27 l8 8 l16 -18"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <h1 class="headline-1 success-title">Thank you for your order!</h1>
+        <p class="section-text success-subtitle">
+          Your payment was successful and your order is confirmed.
+        </p>
+      </div>
 
-      <div id="receipt" class="section-text" style="text-align:left; max-width:720px; margin: 24px auto;">
+      <div id="receipt" class="section-text" style="text-align:left;">
         <p>Loading your receipt…</p>
       </div>
 
-      <a href="index.html" class="btn btn-primary">
-        <span class="text text-1">Back to Home</span>
-        <span class="text text-2" aria-hidden="true">Back to Home</span>
+      <div class="pickup-info">
+        <p>
+          <strong>Pickup in about 30 minutes</strong> at:
+          <br />
+          Ujala Kabab<br />
+          3403 John F Kennedy Blvd<br />
+          Jersey City, NJ 07307
+        </p>
+        <p>
+          Thank you for ordering from <strong>Ujala Kabab</strong> – we can’t wait to serve you!
+        </p>
+      </div>
+
+      <div class="map-wrapper">
+        <iframe
+          class="map-iframe"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=3403+John+F+Kennedy+Blvd,+Jersey+City,+NJ+07307&output=embed">
+        </iframe>
+      </div>
+      <a
+        class="directions-link"
+        href="https://www.google.com/maps/dir/?api=1&destination=3403+John+F+Kennedy+Blvd,+Jersey+City,+NJ+07307"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open directions in Google Maps
       </a>
-    </div>
-  </main>
+
+      <div class="success-actions">
+        <a href="index.html" class="btn btn-primary">
+          <span class="text text-1">Back to Home</span>
+          <span class="text text-2" aria-hidden="true">Back to Home</span>
+        </a>
+      </div>
+    </main>
+  </div>
 
   <script>
     (function () {
-      // ✅ Use the same key as cart.js
       const CART_KEY = "ujala_kabab_cart_v1";
+
+      // 🔁 Detect reload and confirm navigation back home
+      try {
+        const navEntries = performance.getEntriesByType("navigation");
+        let isReload = false;
+
+        if (navEntries && navEntries.length > 0) {
+          isReload = navEntries[0].type === "reload";
+        } else if (performance.navigation && performance.navigation.type === 1) {
+          // Legacy API fallback
+          isReload = true;
+        }
+
+        if (isReload) {
+          const goBack = confirm(
+            "Your order is already confirmed.\n\nDo you want to go back to the home page?"
+          );
+          if (goBack) {
+            window.location.href = "index.html";
+            return;
+          }
+        }
+      } catch (e) {
+        console.warn("Navigation type detection not supported:", e);
+      }
 
       function money(n) {
         const num = Number(n || 0);
@@ -98,11 +262,16 @@
         const params = new URLSearchParams(window.location.search);
         const sessionId = params.get("session_id");
 
-        // Clear cart on success page too (safe redundancy)
-        try { localStorage.setItem(CART_KEY, JSON.stringify([])); } catch(e) {}
+        // Clear cart on success page (even if user comes back here)
+        try {
+          localStorage.setItem(CART_KEY, JSON.stringify([]));
+        } catch (e) {
+          console.warn("Could not clear cart:", e);
+        }
 
         if (!sessionId) {
-          receiptEl.innerHTML = "<p>Missing order session. If you need help, please call the restaurant.</p>";
+          receiptEl.innerHTML =
+            "<p>Missing order session. If you need help, please call the restaurant.</p>";
           return;
         }
 
@@ -118,33 +287,43 @@
 
           const order = data.order;
 
-          const itemsHtml = (order.items || []).map(item => {
-            const lineTotal = Number(item.amount || 0); // your server already sets amount = line total
-            return `
-              <li style="display:flex; justify-content:space-between; gap:12px; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.12);">
-                <div>
-                  <div style="font-weight:600;">${escapeHtml(item.name)}</div>
-                  <div style="opacity:0.85; font-size:0.95em;">Qty: ${escapeHtml(item.quantity)}</div>
-                </div>
-                <div style="font-weight:600;">${money(lineTotal)}</div>
-              </li>
-            `;
-          }).join("");
+          const itemsHtml = (order.items || [])
+            .map((item) => {
+              const lineTotal = Number(item.amount || 0);
+              return `
+                <li style="
+                  display:flex;
+                  justify-content:space-between;
+                  gap:12px;
+                  padding:8px 0;
+                  border-bottom:1px solid rgba(255,255,255,0.12);
+                ">
+                  <div>
+                    <div style="font-weight:600;">${escapeHtml(item.name)}</div>
+                    <div style="opacity:0.85; font-size:0.95em;">
+                      Qty: ${escapeHtml(item.quantity)}
+                    </div>
+                  </div>
+                  <div style="font-weight:600;">${money(lineTotal)}</div>
+                </li>
+              `;
+            })
+            .join("");
 
           receiptEl.innerHTML = `
             <div style="padding:16px; border:1px solid rgba(255,255,255,0.15); border-radius:12px;">
               <h2 style="margin:0 0 12px 0;">Order Receipt</h2>
 
-              <div style="margin-bottom:12px;">
+              <div style="margin-bottom:12px; font-size:0.98rem;">
                 <div><strong>Order ID:</strong> ${escapeHtml(order.orderId)}</div>
                 <div><strong>Payment Status:</strong> ${escapeHtml(order.paymentStatus)}</div>
               </div>
 
-              <div style="margin-bottom:12px;">
+              <div style="margin-bottom:12px; font-size:0.98rem;">
                 <div><strong>Name:</strong> ${escapeHtml(order.customerName || "Customer")}</div>
                 <div><strong>Email:</strong> ${escapeHtml(order.customerEmail || "N/A")}</div>
                 <div><strong>Phone:</strong> ${escapeHtml(order.customerPhone || "N/A")}</div>
-                <div><strong>Address:</strong> ${escapeHtml(order.address || "N/A")}</div>
+                <div><strong>Stripe Address:</strong> ${escapeHtml(order.address || "N/A")}</div>
               </div>
 
               <h3 style="margin:16px 0 8px 0;">Items</h3>
@@ -152,19 +331,29 @@
                 ${itemsHtml || "<li>No items found.</li>"}
               </ul>
 
-              <div style="display:flex; justify-content:space-between; padding-top:12px; margin-top:12px; border-top:1px solid rgba(255,255,255,0.15); font-size:1.05em;">
+              <div style="
+                display:flex;
+                justify-content:space-between;
+                padding-top:12px;
+                margin-top:12px;
+                border-top:1px solid rgba(255,255,255,0.15);
+                font-size:1.05em;
+              ">
                 <div><strong>Total</strong></div>
                 <div><strong>${money(order.total)}</strong></div>
               </div>
 
-              <p style="margin:12px 0 0 0; opacity:0.9;">
-                We’ve sent this order to the restaurant. If you have any questions, call us with your Order ID.
+              <p style="margin:12px 0 0 0; opacity:0.9; font-size:0.95rem;">
+                We’ve sent this order to the restaurant. Please pick it up from
+                <strong>3403 John F Kennedy Blvd, Jersey City, NJ 07307</strong>
+                in about 30 minutes. If you have any questions, call us with your Order ID.
               </p>
             </div>
           `;
         } catch (err) {
           console.error(err);
-          receiptEl.innerHTML = "<p>Could not load receipt. Please refresh or call the restaurant.</p>";
+          receiptEl.innerHTML =
+            "<p>Could not load receipt. Please refresh or call the restaurant.</p>";
         }
       }
 
