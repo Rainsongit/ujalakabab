@@ -867,6 +867,43 @@ Please start preparing this order.
     throw err; // so webhook logs show failure clearly
   }
 }
+// ---------------------------------------------------
+// RECEIPT ENDPOINT: returns same "order" used in email
+// URL: GET /order?session_id=cs_test_...
+// ---------------------------------------------------
+app.get("/order", async (req, res) => {
+  try {
+    const sessionId = req.query.session_id;
+    if (!sessionId) {
+      return res.status(400).json({ error: "Missing session_id" });
+    }
+
+    // Retrieve the session
+    const session = await stripe.checkout.sessions.retrieve(sessionId);
+
+    // Optional: ensure it's paid
+    // Stripe can set payment_status: 'paid' when successful
+    if (session.payment_status !== "paid") {
+      return res.status(400).json({
+        error: "Payment not completed",
+        payment_status: session.payment_status,
+      });
+    }
+
+    // Get line items
+    const lineItems = await stripe.checkout.sessions.listLineItems(sessionId, {
+      limit: 100,
+    });
+
+    // Build same order object you email
+    const order = buildOrderFromSession(session, lineItems);
+
+    return res.json({ ok: true, order });
+  } catch (err) {
+    console.error("❌ Failed to build receipt:", err);
+    return res.status(500).json({ error: "Failed to load receipt" });
+  }
+});
 
 /* ---------------------------------------------------
    HELPER: Build Stripe line_items from cart.js items
